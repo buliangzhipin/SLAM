@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{CED1B1B4-E1D2-4E8D-9510-E2680BBA43D3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VO</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>.\include;.\include\opencv\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\include\opencv\src\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world400d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>.\include;.\include\opencv\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\include\opencv\src\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world400d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>.\include;.\include\opencv\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\include\opencv\src\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world400.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>.\include;.\include\opencv\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\include\opencv\src\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world400.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\opencv\build\include\opencv2\calib3d.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\calib3d\calib3d.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\calib3d\calib3d_c.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\affine.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\base.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\bindings_utils.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\bufferpool.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\check.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\core.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\core_c.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda.inl.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\block.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\border_interpolate.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\color.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\common.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\datamov_utils.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\detail\color_detail.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\detail\reduce.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\detail\reduce_key_val.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\detail\transform_detail.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\detail\type_traits_detail.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\detail\vec_distance_detail.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\dynamic_smem.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\emulation.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\filters.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\funcattrib.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\functional.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\limits.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\reduce.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\saturate_cast.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\scan.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\simd_functions.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\transform.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\type_traits.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\utility.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\vec_distance.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\vec_math.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\vec_traits.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\warp.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\warp_reduce.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda\warp_shuffle.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda_stream_accessor.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cuda_types.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cvdef.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cvstd.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cvstd.inl.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cvstd_wrapper.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cv_cpu_dispatch.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\cv_cpu_helper.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\directx.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\eigen.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\fast_math.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\hal\hal.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\hal\interface.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\hal\intrin.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\hal\intrin_avx.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\hal\intrin_cpp.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\hal\intrin_neon.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\hal\intrin_sse.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\hal\intrin_vsx.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\mat.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\mat.inl.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\matx.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\neon_utils.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\ocl.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\ocl_genbase.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\ocl_defs.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\opencl_info.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\opencl_svm.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\autogenerated\opencl_clamdblas.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\autogenerated\opencl_clamdfft.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\autogenerated\opencl_core.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\autogenerated\opencl_core_wrappers.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\autogenerated\opencl_gl.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\autogenerated\opencl_gl_wrappers.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\opencl_clamdblas.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\opencl_clamdfft.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\opencl_core.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\opencl_core_wrappers.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\opencl_gl.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\opencl_gl_wrappers.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\opencl_svm_20.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\opencl_svm_definitions.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opencl\runtime\opencl_svm_hsa_extension.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\opengl.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\operations.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\optim.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\ovx.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\persistence.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\saturate.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\softfloat.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\sse_utils.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\traits.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\types.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\types_c.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\utility.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\utils\filesystem.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\utils\logger.defines.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\utils\logger.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\utils\trace.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\va_intel.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\version.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\core\vsx_utils.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\cvconfig.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\dnn.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\dnn\all_layers.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\dnn\dict.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\dnn\dnn.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\dnn\dnn.inl.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\dnn\layer.details.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\dnn\layer.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\dnn\shape_utils.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\dnn\version.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\features2d.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\features2d\features2d.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\features2d\hal\interface.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\allocator.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\all_indices.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\any.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\autotuned_index.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\composite_index.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\config.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\defines.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\dist.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\dummy.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\dynamic_bitset.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\flann.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\flann_base.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\general.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\ground_truth.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\hdf5.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\heap.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\hierarchical_clustering_index.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\index_testing.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\kdtree_index.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\kdtree_single_index.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\kmeans_index.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\linear_index.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\logger.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\lsh_index.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\lsh_table.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\matrix.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\miniflann.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\nn_index.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\object_factory.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\params.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\random.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\result_set.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\sampling.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\saving.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\simplex_downhill.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\flann\timer.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\highgui.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\highgui\highgui.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\highgui\highgui_c.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\imgcodecs.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\imgcodecs\imgcodecs.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\imgcodecs\imgcodecs_c.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\imgcodecs\ios.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\imgproc.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\imgproc\detail\distortion_model.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\imgproc\detail\gcgraph.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\imgproc\hal\hal.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\imgproc\hal\interface.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\imgproc\imgproc.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\imgproc\imgproc_c.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\imgproc\types_c.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\ml.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\ml\ml.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\ml\ml.inl.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\objdetect.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\objdetect\detection_based_tracker.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\objdetect\objdetect.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\objdetect\objdetect_c.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\opencv.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\opencv_modules.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\photo.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\photo\cuda.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\photo\photo.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\photo\photo_c.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\shape.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\shape\emdL1.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\shape\hist_cost.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\shape\shape.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\shape\shape_distance.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\shape\shape_transformer.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\detail\autocalib.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\detail\blenders.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\detail\camera.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\detail\exposure_compensate.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\detail\matchers.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\detail\motion_estimators.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\detail\seam_finders.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\detail\timelapsers.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\detail\util.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\detail\util_inl.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\detail\warpers.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\detail\warpers_inl.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\stitching\warpers.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\superres.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\superres\optical_flow.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\video.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videoio.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videoio\cap_ios.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videoio\registry.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videoio\videoio.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videoio\videoio_c.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\deblurring.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\fast_marching.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\fast_marching_inl.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\frame_source.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\global_motion.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\inpainting.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\log.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\motion_core.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\motion_stabilizing.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\optical_flow.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\outlier_rejection.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\ring_buffer.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\stabilizer.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\videostab\wobble_suppression.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\video\background_segm.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\video\tracking.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\video\tracking_c.h" />
+    <ClInclude Include="include\opencv\build\include\opencv2\video\video.hpp" />
+    <ClInclude Include="include\opencv\build\include\opencv2\world.hpp" />
+    <ClInclude Include="include\pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\VO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\opencv\build\etc\licenses\ippicv-readme.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="include\opencv\build\LICENSE" />
+    <None Include="include\opencv\build\OpenCVConfig-version.cmake" />
+    <None Include="include\opencv\build\OpenCVConfig.cmake" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="test\test.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
