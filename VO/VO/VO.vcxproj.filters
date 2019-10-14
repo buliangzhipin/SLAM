@@ -719,12 +719,19 @@
     <ClInclude Include="include\opencv\build\include\opencv2\world.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\opencv_include.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="include\opencv\build\LICENSE" />
     <None Include="include\opencv\build\OpenCVConfig.cmake" />
     <None Include="include\opencv\build\OpenCVConfig-version.cmake" />
     <None Include="include\opencv\build\etc\licenses\ippicv-readme.htm" />
+    <None Include="include\opencv\install\LICENSE" />
+    <None Include="include\opencv\install\OpenCVConfig.cmake" />
+    <None Include="include\opencv\install\OpenCVConfig-version.cmake" />
+    <None Include="include\opencv\install\setup_vars_opencv4.cmd" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="test\test.jpg">

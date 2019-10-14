@@ -2,6 +2,7 @@
 //
 
 #include "pch.h"
+#include "opencv_include.hpp"
 #include <iostream>
 #include "opencv2\core.hpp"
 #include "opencv2\highgui\highgui.hpp"
@@ -21,6 +22,7 @@ int main(int argc, char** argv)
 		cerr << "文件" << argv[1] << "不存在." << endl;
 		return 0;
 	}
+
 
 	// 文件顺利读取, 首先输出一些基本信息
 	cout << "图像宽为" << image.cols << ",高为" << image.rows << ",通道数为" << image.channels() << endl;

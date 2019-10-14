@@ -1,8 +1,10 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 #include "../include/Eigen/Core"
 #include "../include/Eigen/Dense"
+#include "../include/Eigen/Geometry"
 
 #define MAX_SIZE 60
 
@@ -27,4 +29,17 @@ int main()
 	
 	matrix_33 = Eigen::Matrix3d::Random();
 	cout << matrix_33 << endl << endl;
+
+
+	Eigen::Matrix3d rotation_matrix = Eigen::Matrix3d::Identity();
+	Eigen::AngleAxisd rotation_vector(EIGEN_PI / 4, Eigen::Vector3d(0, 0, 1));
+	cout.precision(3);
+	cout << "rotation matrix = \n" << rotation_vector.matrix() << endl;
+	rotation_matrix = rotation_vector.toRotationMatrix();
+	Eigen::Vector3d v(1, 0, 0);
+	Eigen::Vector3d v_rotated = rotation_vector * v;
+	cout << "(1,0,0) after rotation = " << v_rotated.transpose() << endl;
+	v_rotated = rotation_matrix * v;
+	cout << "(1,0,0) after rotation = " << v_rotated.transpose() << endl;
+
 }
