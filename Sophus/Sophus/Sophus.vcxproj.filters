@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sophus\scso3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sophus\se2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sophus\se3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sophus\sim3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sophus\so2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sophus\so3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Sophus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\sophus\scso3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\sophus\se2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\sophus\se3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\sophus\sim3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\sophus\so2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\sophus\so3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\Eigen\Cholesky" />
+    <None Include="include\Eigen\CholmodSupport" />
+    <None Include="include\Eigen\Core" />
+    <None Include="include\Eigen\Dense" />
+    <None Include="include\Eigen\Eigen" />
+    <None Include="include\Eigen\Eigenvalues" />
+    <None Include="include\Eigen\Geometry" />
+    <None Include="include\Eigen\Householder" />
+    <None Include="include\Eigen\IterativeLinearSolvers" />
+    <None Include="include\Eigen\Jacobi" />
+    <None Include="include\Eigen\LU" />
+    <None Include="include\Eigen\MetisSupport" />
+    <None Include="include\Eigen\OrderingMethods" />
+    <None Include="include\Eigen\PardisoSupport" />
+    <None Include="include\Eigen\PaStiXSupport" />
+    <None Include="include\Eigen\QR" />
+    <None Include="include\Eigen\QtAlignedMalloc" />
+    <None Include="include\Eigen\Sparse" />
+    <None Include="include\Eigen\SparseCholesky" />
+    <None Include="include\Eigen\SparseCore" />
+    <None Include="include\Eigen\SparseLU" />
+    <None Include="include\Eigen\SparseQR" />
+    <None Include="include\Eigen\SPQRSupport" />
+    <None Include="include\Eigen\StdDeque" />
+    <None Include="include\Eigen\StdList" />
+    <None Include="include\Eigen\StdVector" />
+    <None Include="include\Eigen\SuperLUSupport" />
+    <None Include="include\Eigen\SVD" />
+    <None Include="include\Eigen\UmfPackSupport" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="include\Eigen\CMakeLists.txt" />
+  </ItemGroup>
+</Project>
