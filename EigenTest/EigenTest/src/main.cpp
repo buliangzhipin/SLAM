@@ -42,4 +42,20 @@ int main()
 	v_rotated = rotation_matrix * v;
 	cout << "(1,0,0) after rotation = " << v_rotated.transpose() << endl;
 
+	Eigen::Vector3d euler_angles = rotation_matrix.eulerAngles(2, 1, 0); //ZYX order, it means yaw pitch roll
+	cout << "yaw pitch roll = " << euler_angles.transpose() << endl;
+
+	Eigen::Quaterniond q = Eigen::Quaterniond(rotation_vector);
+	cout << "quaternion = \n" << q.coeffs() << endl;//coeffs is (x,y,z,w)
+
+	//Or using Roatation Matrix
+	q = Eigen::Quaterniond(rotation_matrix);
+	cout << "quaternion = \n" << q.coeffs() << endl;
+	v_rotated = q * v;
+	cout << "(1,0,0) after rotation = " << v_rotated.transpose() << endl;
+	int a;
+	cin >> a;
+
+	return 0;
+
 }
