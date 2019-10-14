@@ -1,8 +1,12 @@
 Add Eigen library
 
 There are four ways to express rotation in Eigen.
+* rotation matrix
+* Angle Axis
+* Euler Angle
+* Quaternion
 
-First, Rotation Matrix
+### Rotation Matrix
 
 ![](https://latex.codecogs.com/gif.latex?R=\begin{pmatrix}&space;a&b&c\\\\&space;d&e&f\\\\&space;g&h&i&space;\end{pmatrix})
 
