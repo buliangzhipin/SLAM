@@ -3,6 +3,6 @@ Add Eigen library
 There are four ways to express rotation in Eigen.
 
 First, Rotation Matrix
-![](https://www.codecogs.com/eqnedit.php?latex=\begin{pmatrix}&space;a&space;&&space;b&space;&&space;c&space;\\&space;d&space;&&space;e&space;&&space;f&space;\\&space;g&space;&&space;h&space;&&space;i&space;\end{pmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{pmatrix}&space;a&space;&&space;b&space;&&space;c&space;\\&space;d&space;&&space;e&space;&&space;f&space;\\&space;g&space;&&space;h&space;&&space;i&space;\end{pmatrix}" title="\begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix})
+![](https://latex.codecogs.com/gif.latex?\begin{pmatrix}&space;a&space;&&space;b&space;&&space;c&space;\\&space;d&space;&&space;e&space;&&space;f&space;\\&space;g&space;&&space;h&space;&&space;i&space;\end{pmatrix})
 
-![](http://latex.codecogs.com/gif.latex?\\sigma=\sqrt{\frac{1}{n}{\sum_{k=1}^n(x_i-\bar{x})^2}})
+![](https://latex.codecogs.com/gif.latex?\begin{pmatrix}&space;a&space;&&space;b&space;&&space;c&space;\\&space;d&space;&&space;e&space;&&space;f&space;\\&space;g&space;&&space;h&space;&&space;i&space;\end{pmatrix})
