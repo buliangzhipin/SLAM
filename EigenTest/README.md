@@ -44,3 +44,34 @@ And it can be created as
 Eigen::AngleAxisd rotation_vector(EIGEN_PI/4,Eigen::Vector3d(0,0,1)); //
 Rotate 45 degrees along the z axis
 ```
+
+### Euler Angles
+The Euler angles are three angles introduced by Leonhard Euler to describe the orientation of a rigid body with respect to a fixed coordinate system. They can also represent the orientation of a mobile frame of reference in physics or the orientation of a general basis in 3-dimensional linear algebra.
+
+We can create an euler angles expression as below
+
+```
+Eigen::Vector3d euler_angles = rotation_matrix.eulerAngles(2,1,0); \\ZYX order, it means yaw pitch roll
+cout<<"yaw pitch roll = "<< euler_angles.transpose()<<endl;
+```
+
+### Quaternion
+
+We can create a quaternion expression by using angle-axis expression as below
+```
+Eigen::Quaterniond q = Eigen::Quaterniond(rotation_vector);
+cout<<"quaternion = \n"<<q.coeffs()<<endl;//coeffs is (x,y,z,w)
+
+//Or using Roatation Matrix
+q = Eigen::Quaterniond(rotation_matrix);
+cout<<"quaternion = \n"<<q.coeffs()<<endl;
+```
+
+### Rotation
+
+We can use multiplication to do the rotation in Eigen.
+```
+v_rotated = rotation_matrix*v;
+v_rotated = rotation_vector*v;
+v_rotated = q*v;
+```
