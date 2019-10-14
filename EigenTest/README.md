@@ -3,14 +3,4 @@ Add Eigen library
 There are four ways to express rotation in Eigen.
 
 First, Rotation Matrix
-
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
-\begin{equation}
-A = \left(
-\begin{matrix} 
-a & b \\ 
-c & d 
-\end{matrix} 
-\right)
-\end{equation}
-</script>
+![](https://www.codecogs.com/eqnedit.php?latex=\begin{pmatrix}&space;a&space;&&space;b&space;&&space;c&space;\\&space;d&space;&&space;e&space;&&space;f&space;\\&space;g&space;&&space;h&space;&&space;i&space;\end{pmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{pmatrix}&space;a&space;&&space;b&space;&&space;c&space;\\&space;d&space;&&space;e&space;&&space;f&space;\\&space;g&space;&&space;h&space;&&space;i&space;\end{pmatrix}" title="\begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix}" )
