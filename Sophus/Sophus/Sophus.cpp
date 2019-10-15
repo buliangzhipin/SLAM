@@ -21,5 +21,16 @@ int main()
 	cout << "SO(3) from vector: " << SO3_v << endl;
 	cout << "SO(3) from quaternion :" << SO3_q << endl;
 
+	Eigen::Vector3d so3 = SO3_R.log();
+	cout << "so3 = " << so3.transpose() << endl;
+	cout << "so3 hat= " << Sophus::SO3::hat(so3) << endl;
+	cout << "so3 hat vee= " << Sophus::SO3::vee(Sophus::SO3::hat(so3)).transpose() << endl;
+
+
+	Eigen::Vector3d update_so3(1e-4, 0, 0); 
+	Sophus::SO3 SO3_updated = Sophus::SO3::exp(update_so3)*SO3_R; 
+	cout<<"SO3 updated = "<<SO3_updated<<endl;
+
+	cout << "end" << endl;
 }
 
